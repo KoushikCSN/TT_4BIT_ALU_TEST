@@ -58,7 +58,7 @@ async def test_tt_um_Richard28277(dut):
     assert dut.uo_out.value == 0b0000_0010  # Expect 2 (0b00000010)
 
     # Test OR operation
-    dut.ui_in.value = 0b1100_1010  # a = 12, b = 10
+    dut.ui_in.value = 0b1100_1011  # a = 12, b = 10
     dut.uio_in.value = 0b0101      # opcode = OR
     await Timer(50, units='ns')
     display_result("OR")
